@@ -1,1 +1,381 @@
-/* место для вашего кода */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 92px 50px 92px 50px;
+  font-size: 18px;
+}
+
+.navigation__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  list-style: none;
+}
+
+.navigation__menu-item {
+  position: relative;
+  line-height: 21.6px;
+}
+
+.navigation__menu-item::before {
+  content: "◦";
+  margin-right: 7px;
+  vertical-align: middle;
+  font-size: 26px;
+}
+
+.navigation__menu-item:first-child::before {
+  display: none;
+}
+
+.navigation__menu-item>a {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.navigation__menu-item>a.active {
+  color: #000;
+  text-decoration: none;
+}
+
+.navigation__menu-item:hover>a {
+  text-decoration: none;
+}
+
+.header__logo {
+  margin-right: 145px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  font-style: normal;
+  text-align: left;
+  list-style: none;
+}
+
+.header__contacts li {
+  line-height: 24.3px;
+}
+
+.header__contacts-item {
+  border: none;
+  color: #000;
+  font-weight: 400;
+  line-height: 24.3px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.header__contacts-address {
+  max-width: 240px;
+  text-decoration: none;
+}
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 106px;
+  padding: 165px 50px 50px 50px;
+  color: #fff;
+  background-image: url(../images/lotus-flower.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__titles {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+}
+
+.cover__title {
+  display: block;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.title__left {
+  align-self: flex-start;
+}
+
+.title__center {
+  align-self: center;
+  margin-left: 30px;
+}
+
+.title__right {
+  position: relative;
+  left: 30.5px;
+  align-self: flex-end;
+}
+
+.cover__description {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-paragraph {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+  word-spacing: 19px;
+}
+
+.cover__description-button {
+
+  border: 1px solid #fff;
+  padding: 11px 32px 10px 31px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.cover__description-button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.lots__section {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 180px 24px 120px 24px;
+}
+
+.lots__title {
+  margin-left: 40px;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  min-height: 596px;
+  list-style: none;
+}
+
+.lots__list-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  color: #fff;
+}
+
+.item__first {
+  background-image: url(../images/lots/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.lots__list-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.item__second {
+  background-image: url(../images/lots/2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.item__third {
+  background-image: url(../images/lots/3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.lots__list-item-link {
+  z-index: 1;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.lots__list-item-link:hover {
+  text-decoration: none;
+}
+
+.lots__list-item-article {
+  z-index: 1;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots__link-more {
+  margin-top: 3px;
+  margin-left: 40px;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.lots__link-more:hover {
+  text-decoration: none;
+}
+
+.auction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 72px;
+  padding: 34px 24px 120px 24px;
+}
+
+.auction__logo {
+  display: flex;
+  align-self: flex-start;
+  margin-left: 47px;
+}
+
+.auction__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 101px;
+}
+
+.auction__text-title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.auction__text-paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 100px;
+}
+
+.auction__text-paragraphs>p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  padding: 60px 50px 96px 50px;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 24.3px;
+  list-style: none;
+}
+
+.footer__contacts-item {
+  color: #000;
+  font-style: normal;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__contacts-address {
+  text-decoration: none;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__navigation__menu {
+  text-align: center;
+  text-underline-offset: 4px;
+  list-style: none;
+}
+
+.footer__navigation__menu-item>a {
+  display: block;
+  color: #000;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer__navigation__menu-item>a:hover {
+  text-decoration: none;
+}
+
+.footer__navigation__menu-item>a.active {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.footer__sicials-link img {
+  display: block;
+  border-radius: 50%;
+}
+
+.footer__sicials-link:nth-child(1)>img:hover {
+  background-color: red;
+}
+
+.footer__sicials-link:nth-child(2)>img:hover {
+  background-color: #0077ff;
+}
+
+.footer__sicials-link:nth-child(3)>img:hover {
+  background-color: #e60023;
+}
