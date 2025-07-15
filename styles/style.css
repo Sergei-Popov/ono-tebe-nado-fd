@@ -57,11 +57,11 @@
   min-width: 240px;
   font-style: normal;
   text-align: left;
-  list-style: none;
 }
 
 .header__contacts li {
   line-height: 24.3px;
+  list-style: none;
 }
 
 .header__contacts-item {
@@ -321,6 +321,9 @@
   flex-direction: column;
   font-size: 18px;
   line-height: 24.3px;
+}
+
+.footer__contacts li {
   list-style: none;
 }
 
