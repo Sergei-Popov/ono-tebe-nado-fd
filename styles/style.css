@@ -1,3 +1,5 @@
+/* HEADER */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -75,6 +77,8 @@
   max-width: 240px;
   text-decoration: none;
 }
+
+/* MAIN */
 
 .cover {
   position: relative;
@@ -301,6 +305,8 @@
   font-size: 20px;
   line-height: 24px;
 }
+
+/* FOOTER */
 
 .footer {
   display: flex;
