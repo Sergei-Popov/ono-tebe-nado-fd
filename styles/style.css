@@ -35,7 +35,8 @@
 .navigation__menu-item>a {
   color: #000;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 .navigation__menu-item>a.active {
@@ -52,11 +53,8 @@
 }
 
 .header__contacts {
-  display: flex;
-  flex-direction: column;
   min-width: 240px;
   font-style: normal;
-  text-align: left;
 }
 
 .header__contacts li {
@@ -68,9 +66,9 @@
   border: none;
   color: #000;
   font-weight: 400;
-  line-height: 24.3px;
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 
 .header__contacts-address {
@@ -126,7 +124,7 @@
 
 .title__center {
   align-self: center;
-  margin-left: 30px;
+  margin-left: 31px;
 }
 
 .title__right {
@@ -239,6 +237,8 @@
   font-size: 22px;
   line-height: 120%;
   text-transform: uppercase;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .lots__list-item-link:hover {
@@ -260,7 +260,8 @@
   font-weight: 400;
   font-size: 20px;
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
 }
 
 .lots__link-more:hover {
@@ -291,6 +292,7 @@
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
+  word-spacing: -1px;
 }
 
 .auction__text-paragraphs {
@@ -313,7 +315,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: start;
-  padding: 60px 50px 96px 50px;
+  padding: 61px 50px 82px 51px;
 }
 
 .footer__contacts {
@@ -332,6 +334,7 @@
   font-style: normal;
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 }
 
 .footer__contacts-address {
@@ -339,13 +342,11 @@
 }
 
 .footer__navigation {
-  display: flex;
-  flex-direction: column;
+  margin-left: 3px;
 }
 
 .footer__navigation__menu {
   text-align: center;
-  text-underline-offset: 4px;
   list-style: none;
 }
 
@@ -355,6 +356,7 @@
   font-size: 18px;
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 }
 
 .footer__navigation__menu-item>a:hover {
